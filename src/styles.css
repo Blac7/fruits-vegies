@@ -1,0 +1,547 @@
+*,
+body {
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Nav Bar */
+.bg-dark {
+  background-color: #212529 !important;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 100px;
+}
+
+.nav-place {
+  padding-bottom: 57px;
+}
+
+.layout-inner {
+  min-height: 550px;
+}
+
+.home .navbar {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.home .nav-place {
+  padding-bottom: 0px;
+}
+
+/* Banner */
+.banner {
+  box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 50%);
+}
+
+.banner img {
+  height: 720px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.banner .carousel-indicators {
+  margin-bottom: 20px;
+}
+
+.banner .carousel-indicators button {
+  width: 20px;
+  height: 19px;
+  border-radius: 50%;
+  margin: 10px;
+  border: 3px solid grey;
+  opacity: 0.65;
+  background: black;
+}
+
+.banner .carousel-indicators button.active {
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+/* Seasonal */
+.seasonal {
+  height: 95vh;
+  /* background-color: #f7f8f9; */
+}
+
+/* Exortic */
+.exortic {
+  height: 95vh;
+  background-color: #f7f8f9;
+}
+
+.row-header {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.row-header::after {
+  content: ">";
+  width: 10px;
+  height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 6px;
+}
+
+/* card */
+.card {
+  border-radius: 0px;
+  /* background: transparent; */
+}
+
+.seasonal .card {
+  margin: 10px;
+  border: 2px solid rgba(15, 155, 108, 0.25);
+}
+
+.exortic .card {
+  margin: 10px;
+  border: 2px solid rgba(112, 9, 153, 0.25);
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-radius: 0px;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease;
+}
+
+.seasonal .card:hover {
+  border: 3px solid rgba(55, 214, 161, 0.25);
+}
+
+.exortic .card:hover {
+  border: 3px solid rgba(191, 77, 236, 0.25);
+}
+
+.card-img-top {
+  height: 275px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0px;
+}
+
+.seasonal .card:hover .card-img-top {
+  border-bottom: 3px solid rgba(15, 155, 108, 0.25);
+}
+
+.exortic .card:hover .card-img-top {
+  border-bottom: 3px solid rgba(112, 9, 153, 0.25);
+}
+
+.card-title.fru {
+  color: rgb(117, 44, 56);
+}
+
+.card-title.veg {
+  color: rgb(34, 97, 34);
+}
+
+/* footer */
+.footer {
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px 10px 20px;
+  background-color: #212529;
+  color: white;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin: 10px;
+}
+
+li.footer-link {
+  float: left;
+  margin-right: 25px;
+}
+
+.footer-link a {
+  text-decoration: none;
+}
+
+/* Sign up */
+.signin-form {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.signup-form {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+/* fruit */
+.fruit-inner {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  /* border-radius: 5px; */
+}
+
+.fruit-side {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.fruit-images .carousel-inner {
+  margin: 10px;
+  padding: 10px;
+  overflow: visible !important;
+}
+
+.fruit-images button.carousel-control-next,
+.fruit-images button.carousel-control-prev {
+  width: 30px;
+  height: 30px;
+  background: black;
+  opacity: 1;
+  border: none;
+  position: absolute;
+  top: -35px;
+  left: 80%;
+}
+.fruit-images button.carousel-control-next {
+  top: -35px;
+  left: 85%;
+}
+
+.fruit-imgs {
+  margin: 5px;
+  width: 91% !important;
+  height: 440px !important;
+  object-fit: cover;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.fruit-inner-content {
+  padding-left: 0px !important;
+  /* margin-left: -10px !important; */
+}
+
+.color-outer {
+  display: inline-flex;
+  margin: 3px;
+  padding: 3px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.color-inner {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0px !important;
+}
+
+.popular-fruit {
+  /* padding: 10px; */
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 40vh;
+}
+
+.popular-fruit img {
+  width: 100%;
+  height: 25vh;
+}
+
+.popular-fruit-name {
+  padding: 10px;
+  /* font-size: 18px; */
+  margin-bottom: 5px;
+}
+
+.pop-fru-btn {
+  float: right;
+  margin-top: -5px;
+}
+
+/* Shop filters */
+.filters {
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  margin-top: -2px;
+}
+
+h5.filter-title {
+  font-weight: 400;
+}
+
+.price-range {
+  margin-top: -14px;
+}
+
+span.price-max {
+  float: right;
+}
+
+a.toogle.filter-head {
+  /* margin-left: -10px !important; */
+  display: block;
+  width: 100%;
+  padding: 7px 3px;
+  text-decoration: none;
+  color: rgba(3, 84, 190, 0.75);
+  font-weight: bold;
+  /* border-bottom: 1px solid; */
+}
+
+a.toogle.filter-head::after {
+  float: right;
+  content: "---";
+  font-size: 15px;
+}
+
+a.toogle.filter-head.collapsed {
+  display: block;
+  width: 100%;
+  padding: 7px 3px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: normal;
+  /* border-bottom: 1px solid; */
+}
+
+a.toogle.filter-head.collapsed::after {
+  float: right;
+  content: "+";
+  font-size: 18px;
+}
+
+.form-check#collapse1 {
+  padding-left: 1rem;
+}
+
+/* .collapse {
+  margin-left: 10px;
+}
+
+.collapse.show {
+  margin-left: 10px;
+} */
+
+/* Cart */
+.horizontal .card-body {
+  float: right;
+}
+
+.horizontal .card-img-top {
+  border-right: 2px solid rgba(35, 123, 226, 0.2);
+  border-top: 2px solid rgba(35, 123, 226, 0.2);
+  border-bottom: none;
+}
+
+.horizontal h5.card-title {
+  border-right: 2px solid rgba(35, 123, 226, 0.2);
+  margin-bottom: 0px;
+}
+
+/* .horizontal .img-part {
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+} */
+
+.checkout-link {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.horizontal.card {
+  border: 2px solid rgba(35, 123, 226, 0.15);
+}
+
+.horizontal.card:hover {
+  border: 3px solid rgba(35, 123, 206, 0.25);
+}
+
+/* Fruit update and delete - Admin */
+img.fruit-single-img.mb-2 {
+  width: 130px;
+  height: 130px;
+}
+
+.fruit-single-img-box {
+  width: 100%;
+  text-align: center;
+}
+
+.fruit-single {
+  /* border: 1px solid rgba(0, 0, 0, 0.25); */
+  border-radius: 5px;
+  padding: 15px 10px 10px 15px;
+  box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.fruit-single-links-box {
+  width: 100%;
+  /* text-align: center; */
+}
+
+/* back #f7f8f9 #f7faff */
+
+/* Shipping and Payment */
+.shipping-from {
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.shipping-details {
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.payment-box {
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 20%);
+}
+
+/* dashboard */
+
+.admin-dash-header {
+  width: 100%;
+  background: rgba(39, 84, 230, 0.125);
+}
+
+.admin-links a {
+  text-decoration: none;
+}
+
+.list-group-item.list-group-item-action.active {
+  border-color: transparent;
+  box-shadow: 0px 0px 5px 1px rgb(0 64 128 / 35%);
+}
+
+.admin-links .list-group-item.active {
+  background-color: #4f5763;
+  border-color: transparent;
+  box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 35%);
+}
+
+.admin-details .list-group-item.list-group-item-action h6 {
+  width: 40% !important;
+}
+
+.user-dash-header {
+  width: 100%;
+  background: rgba(24, 102, 17, 0.25);
+}
+
+.user-links a {
+  text-decoration: none;
+}
+
+.user-links .list-group-item.active {
+  background-color: #565472;
+  border-color: transparent;
+  box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 35%);
+}
+
+.user-details .list-group-item.list-group-item-action h6 {
+  width: 40% !important;
+}
+
+.profile-form {
+  box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.profile-header {
+  font-size: 20px;
+}
+
+.manage-fruit {
+  box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 20%);
+}
+/* 
+.showcolors {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+} */
+
+.showImgs {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.all-orders-box {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.order .list-group-item.list-group-item-action.active {
+  background-color: rgb(37 76 97 / 70%);
+  border-color: transparent;
+  box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 35%);
+}
+
+.latest-order .card-header {
+  background-color: rgba(0, 102, 204, 0.75) !important;
+  color: white;
+}
+
+.latest-order .card {
+  border: 1px solid rgba(0, 102, 204, 0.75) !important;
+}
+
+.order.card,
+.order .card {
+  transform: translateY(0px);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: none;
+}
+
+.order.card:hover,
+.order .card:hover {
+  transform: translateY(0px);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: none;
+}
+
+.order .card-header {
+  background-color: rgba(69, 71, 73, 0.75);
+  color: white;
+}
+
+.order .list-header {
+  font-weight: bold;
+  color: #565472;
+}
+
+.order-fruit img {
+  width: 150px;
+  height: 135px;
+}
+
+.order-fruit p {
+  margin-bottom: 7px;
+}
