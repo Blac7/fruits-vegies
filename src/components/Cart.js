@@ -32,7 +32,7 @@ const Cart = () => {
     const showItemsInCart = () => {
         if(itemTotal() > 0) {
             return getCartFruits().map((fruit, i) => (
-                <div key={i} className="col-md-6 mb-3 p-3">
+                <div key={i} className="col-lg-6 col-md-12 mb-3 p-3">
                     <HorizontalCard 
                         fruit={fruit} 
                         IncQuantity={true} 
@@ -50,7 +50,7 @@ const Cart = () => {
             <Layout>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-10">
+                        <div className="col-lg-10 col-md-12">
                             <div className="items-box m-4 p-3">
                                 <div className="items-count">
                                     { showItemMsg() }
@@ -62,7 +62,7 @@ const Cart = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-2">
+                        <div className="col-lg-2 col-md-12">
                             <div className="checkout m-3 pt-5">
                                 {itemTotal() > 0 ? (
                                     <div className="checkout-link p-3 mt-5">

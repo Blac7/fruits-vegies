@@ -50,16 +50,16 @@ const Orders = (props) => {
 
     const showFruits = fruits => {
         return fruits &&  fruits.map((fruit, i) => (
-            <div key={i} className="col-md-6 mb-3">
+            <div key={i} className="col-lg-6 col-sm-4 col-xs-6 mb-3">
                 <div className="order-fruit">
                     <div className="card mb-3">
                         <div className="row g-0">
-                            <div className="col-md-6">
+                            <div className="col-xxl-6 col-xl-12">
                                 <img src={fruit.imagesURl[1]} alt={fruit.name}/>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-xxl-6 col-xl-12">
                                 <div className="card-body">
-                                    <h5 className="card-title">{fruit.name}</h5>
+                                    <h6 className="card-title">{fruit.name}</h6>
                                     <p className="card-text">Price: Rs.{fruit.price}</p>
                                     <p className="card-text">Quantity: {fruit.count}kgs</p>
                                 </div>
@@ -75,7 +75,7 @@ const Orders = (props) => {
     const showOrderDetails = () => {
         return orders && orders.map((order, i) => (
             <div key={i} className="col-md-6">
-                <div className={i===0 ? `order-details latest-order` : `order-details`}>
+                <div className={i===0 ? `order-details latest-order mb-3` : `order-details mb-3`}>
                     <div className="order card">
                         <div className="card-header">
                             <div className="d-flex w-100 justify-content-between">

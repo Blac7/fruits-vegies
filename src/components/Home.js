@@ -34,7 +34,7 @@ const Home = () => {
 
     const displayFruitsSeasonal = () => {
         return fruitsSeasonal && fruitsSeasonal.map((fruit, i) => (
-            <div key={i} className="col-md-3 mb-3">
+            <div key={i} className="col-lg-3 col-sm-6 col-xs-12 mb-3">
                 <Card fruit={fruit} />
             </div>
         ))
@@ -42,7 +42,7 @@ const Home = () => {
 
     const displayFruitsExortic = () => {
         return fruitsExortic && fruitsExortic.map((fruit, i) => (
-            <div key={i} className="col-md-3 mb-3">
+            <div key={i} className="col-lg-3 col-sm-6 col-xs-12  mb-3">
                 <Card fruit={fruit} />
             </div>
         ))
@@ -54,7 +54,7 @@ const Home = () => {
                 <Banner />
                     <div className="seasonal">
                         <div className="container-fluid p-5">
-                            <div className="row-header mx-4 mb-4">Seasonal Fruits</div>
+                            <div className="row-header mx-4 mx-xs-1 mb-4">Seasonal Fruits</div>
                             <div className="row-content mx-4">
                                 <div className="row mb-3">
                                     { displayFruitsSeasonal() }
@@ -64,7 +64,7 @@ const Home = () => {
                     </div>
                     <div className="exortic">
                         <div className="container-fluid p-5">
-                            <div className="row-header mx-4 mb-4">Exortic Fruits</div>
+                            <div className="row-header mx-4 mx-xs-1 mb-4">Exotic Fruits</div>
                             <div className="row-content mx-4">
                                 <div className="row mb-3">
                                     { displayFruitsExortic() }

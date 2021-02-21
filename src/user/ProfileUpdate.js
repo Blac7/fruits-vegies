@@ -55,8 +55,8 @@ function ProfileUpdate() {
     return (
         <div>
             <Layout>
-                <div className="container m-5">
-                    <div className="row justify-content-center">
+                <div className="container">
+                    <div className="row justify-content-center  m-5">
                         <div className="col-md-9">
                             <div className="profile-header m-2">
                                 <p><strong>Hi {user.firstName}</strong> Update Your Profile </p>

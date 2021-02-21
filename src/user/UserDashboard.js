@@ -17,7 +17,7 @@ const UserDashboard = () => {
                    <div className="user-dashboard m-5 p-3">
                         <div className="row">
                             <div className="col-md-3">
-                                <div className="user-links m-3">
+                                <div className="user-links m-3 mb-3">
                                     <ul className="list-group">
                                         <li className="list-group-item user-link active" aria-current="true">Links</li>
                                         <li className="list-group-item user-link"><Link to='/manageUser'>Manage Account</Link></li>

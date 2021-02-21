@@ -16,7 +16,7 @@ const AdminDashboard = () => {
                    <div className="admin-dashboard m-5 p-3">
                         <div className="row">
                             <div className="col-md-3">
-                                <div className="admin-links m-3">
+                                <div className="admin-links m-3 mb-3">
                                     <ul className="list-group">
                                         <li className="list-group-item admin-link active" aria-current="true">Links</li>
                                         <li className="list-group-item admin-link"><Link to='/admin/manageFruit'>Mange Fruit</Link></li>

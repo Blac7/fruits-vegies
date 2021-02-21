@@ -111,7 +111,7 @@ const Fruit = (props) => {
 
     const displayFruitsSold = () => {
         return fruitsSold && fruitsSold.map((fruit, i) => (
-            <div key={i} className="col-md-3">
+            <div key={i} className="col-xl-3 col-lg-4 col-md-4 col-sm-6 mb-2">
                 <div className="popular-fruit">
                     <div className="popular-fruit-img">
                         <img src={fruit.imagesURl[1]} alt={fruit.name} />
@@ -136,7 +136,7 @@ const Fruit = (props) => {
                             <div className="col-md-12">
                                 <div className="fruit-details">
                                     <div className="row">
-                                        <div className="col-md-9">
+                                        <div className="col-lg-9 col-md-12">
                                             <h4 className="fruit-title mb-3">
                                                 {fruit.category === 'fruits' ? (
                                                         <span style={{fontWeight:'normal', fontSize:'20px'}}>Fruit Name:</span>
@@ -160,7 +160,7 @@ const Fruit = (props) => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3">
+                                        <div className="col-lg-3 col-md-12">
                                             <div className="fruit-inner-content p-4 pb-3">
                                                 <p className="fruit-text">{fruit.description}</p>
                                                 <p className="fruit-text"><Ratings rating={rating} /> ({fruit.Persons_rating})</p>

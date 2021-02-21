@@ -57,7 +57,7 @@ const AllOrders = () => {
 
     const showAllOrders = () => {
         return orders && orders.map((order, i) => (
-            <div key={i} className="col-md-3">
+            <div key={i} className="col-lg-3 col-md-6 col-xs-12">
                 <div className="order p-3">
                     <div className="list-group">
                         <a className="list-group-item list-group-item-action active" aria-current="true">
@@ -83,7 +83,7 @@ const AllOrders = () => {
                             <div className="d-flex w-100 justify-content-between">
                                 <h6 className="mt-2">Transaction ID</h6>
                             </div>
-                            <p className="mb-2">{order.transaction_id}</p>
+                            <p className="mb-2 text-truncate">{order.transaction_id}</p>
                         </a>
                         <a className="list-group-item list-group-item-action">
                             <div className="d-flex w-100 justify-content-between">

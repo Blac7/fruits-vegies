@@ -226,7 +226,7 @@ const UpdateFruit = (props) => {
                                 </div>
                                 <div className="col-md-4 p-3">
                                     <div className="form-check form-check-inline mb-3">
-                                        <label className="form-check-label" for="inlineCheckbox4">isExortic</label>
+                                        <label className="form-check-label" for="inlineCheckbox4">isExotic</label>
                                         <input onChange={handleToogle('isExortic')} value={checked.indexOf('isExortic') === -1} className="form-check-input" type="checkbox" id="inlineCheckbox4" />
                                     </div>
                                 </div>

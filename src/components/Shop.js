@@ -40,7 +40,7 @@ const Shop = () => {
     // }
     const displayFruitsFiltered = () => {
         return fruitsFiltered && fruitsFiltered.map((fruit, i) => (
-            <div key={i} className="col-md-3 mb-3">
+            <div key={i} className="col-lg-3 col-md-6 col-xs-12 mb-3">
                 <Card fruit={fruit} />
             </div>
         ))

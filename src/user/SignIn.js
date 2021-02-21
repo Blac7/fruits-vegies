@@ -87,10 +87,10 @@ const SignIn = () => {
     return (
         <div>
             <Layout>
-                <div className="container m-3 p-3">
+                <div className="container">
                     <div className="row justify-content-md-center">
-                        <div className="col-md-5">
-                            <div className="signin-form m-1 p-4 justify-content-center">
+                        <div className="col-lg-5 col-md-12">
+                            <div className="signin-form m-5 p-3">
                                 <div className="signup-header mb-4 mx-3">
                                     <h5>SignIn to access your Account.</h5>
                                     {showLoading()}
