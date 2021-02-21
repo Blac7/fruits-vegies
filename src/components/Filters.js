@@ -53,7 +53,7 @@ const Filters = ({filters, setFilters}) => {
                     <div className="filter-content">
                         <form className="form-filter">
                             <a className="toogle filter-head mb-2 collapsed" href="#collapse1" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse1">
-                                Catergory
+                                Category
                             </a>
                             <div className="form-check mb-2 collapse" id="collapse1">
                                 <div className="form-check mb-1">

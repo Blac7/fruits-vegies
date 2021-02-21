@@ -82,6 +82,11 @@ const Cart = () => {
                                                     </button>
                                                 </Link>
                                             )}
+                                            <Link to='/shop'>
+                                                <button className="btn btn-outline-secondary mb-3">
+                                                    Continue Shopping
+                                                </button>
+                                            </Link>
                                         </div>
                                     </div>
                                 ) : (<></>)}

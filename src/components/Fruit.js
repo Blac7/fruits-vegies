@@ -170,7 +170,7 @@ const Fruit = (props) => {
                                                 <p className="fruit-text"><strong>Discount:</strong> {showDiscount()}</p>
                                                 <p className="fruit-text"><strong>Colors:</strong> {showColors()} </p> 
                                                 { fruit.quantity > 0 && (
-                                                    <Link onClick={addToCart} to="/cart" className="btn btn-outline-warning">
+                                                    <Link onClick={addToCart} to="/cart" className="btn btn-warning">
                                                         Add to Cart
                                                     </Link>
                                                 )}
