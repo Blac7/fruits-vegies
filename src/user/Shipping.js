@@ -6,11 +6,11 @@ import { loadStripe } from '@stripe/stripe-js'
 
 import Layout from '../components/Layout'
 import CheckoutForm from './CheckoutForm'
-import { API } from '../Config'
+import { API, REACT_APP_STRIPE_PUBLIC_KEY  } from '../Config'
 import { isAuthenticated } from '../auth/Auth'
 import { getTotal, itemTotal } from '../components/CartHelpers'
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY)
+const stripePromise = loadStripe(REACT_APP_STRIPE_PUBLIC_KEY)
 
 const Shipping = () => {
     const [address, setAddress] = useState({
